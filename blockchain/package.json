@@ -1,0 +1,20 @@
+{
+  "name": "vault-chain",
+  "version": "0.0.1",
+  "description": "hashchain for vault-proto",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon main.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "crypto-js": "^3.1.9-1",
+    "express": "~4.16.4",
+    "rethinkdb": "^2.3.3",
+    "thinky": "^2.3.9",
+    "ws": "^1.1.0"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  }
+}

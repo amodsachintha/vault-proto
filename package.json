@@ -4,10 +4,11 @@
   "scripts": {
     "frontend": "cd frontend && npm run start",
     "server": "nodemon server.js",
-    "chain" : "cd blockchain && npm start",
+    "chain": "cd blockchain && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run frontend\" \"npm run chain\""
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
   },

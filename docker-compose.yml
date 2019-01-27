@@ -1,0 +1,36 @@
+version: '2'
+services:
+  node1:
+    build:
+      context: ./
+      dockerfile: Dockerfile-alternate
+    ports:
+      - "4001:4001"
+      - "3000:3000"
+      - "8080:8080"
+    volumes:
+      - ~/github/vault-proto:/vault-proto
+  node2:
+    build:
+      context: ./
+      dockerfile: Dockerfile-alternate
+    ports:
+      - "4002:4001"
+      - "3001:3000"
+      - "8081:8080"
+    volumes:
+      - ~/github/vault-proto:/vault-proto
+    links:
+      - node1:node1
+  node3:
+    build:
+      context: ./
+      dockerfile: Dockerfile-alternate
+    ports:
+      - "4003:4001"
+      - "3002:3000"
+      - "8082:8080"
+    volumes:
+      - ~/github/vault-proto:/vault-proto
+    links:
+      - node2:node2

@@ -15,6 +15,6 @@ run this command in the directory where the **Dockerfile** is located.
 
     docker start -i vault-proto
     
-##  use docker-compose to orchestrate multiple containers,
+##  use docker-compose to orchestrate multiple containers
     docker-compose up
 

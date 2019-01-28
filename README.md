@@ -6,7 +6,7 @@ run this command in the directory where the **Dockerfile** is located.
 
 ## Then spin up a container from the image
 
-    docker run -it --name vault-proto -v ~/github/vault-proto:/vault-proto -p 8080:8080 -p 3000:3000 vault
+    docker run -it --name vault-proto -v ~/github/vault-proto:/vault-proto -p 8080:8080 -p 3000:3000 -p 4001:4001 vault
 
   
 **Ctrl + C** to stop the container or `docker stop vault-proto`  

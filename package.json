@@ -8,7 +8,7 @@
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run frontend\" \"npm run chain\""
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
   },
